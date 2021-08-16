@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="13" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="646572" started-at="2021-08-13T15:27:32 IST" finished-at="2021-08-13T15:38:18 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@77be656f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="646572" started-at="2021-08-13T15:27:32 IST" finished-at="2021-08-13T15:38:18 IST">
+      <class name="testrunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunner@77be656f]" name="setUpClass" is-config="true" duration-ms="558" started-at="2021-08-13T15:27:32 IST" finished-at="2021-08-13T15:27:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@77be656f]" name="runScenario" duration-ms="68362" started-at="2021-08-13T15:27:32 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-13T15:28:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create an alert"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Defect report"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@77be656f]" name="runScenario" duration-ms="46003" started-at="2021-08-13T15:28:41 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-13T15:29:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create an alert without mobilenumber"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Defect report"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@77be656f]" name="runScenario" duration-ms="48353" started-at="2021-08-13T15:29:27 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-13T15:30:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create an alert without emailid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Defect report"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Thanks for creating alert, we will reach out to you with matching ads] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Thanks for creating alert, we will reach out to you with matching ads] but found []
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at stepdefinition.defect3withoutemailid.an_alert_should_be_created(defect3withoutemailid.java:82)
+at ✽.an alert should be created(file:///E:/New%20folder/abc/eclipsefiles/quikrtestngg/features/defect.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@77be656f]" name="runScenario" duration-ms="59715" started-at="2021-08-13T15:30:15 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-13T15:31:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create an alert for mobiles&tablets"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Defect report"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Thanks for creating alert, we will reach out to you with matching ads] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Thanks for creating alert, we will reach out to you with matching ads] but found []
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at stepdefinition.defect4withoutSIM.it_Should_create_alert(defect4withoutSIM.java:77)
+at ✽.it Should create alert(file:///E:/New%20folder/abc/eclipsefiles/quikrtestngg/features/defect.feature:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@77be656f]" name="runScenario" duration-ms="38601" started-at="2021-08-13T15:31:15 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-13T15:31:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User wants to open the application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["open the application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@77be656f]" name="runScenario" duration-ms="52813" started-at="2021-08-13T15:31:54 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-13T15:32:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User wants to download the Quikr app"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["open the application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@77be656f]" name="runScenario" duration-ms="48953" started-at="2021-08-13T15:32:46 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-13T15:33:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User wants to send the download link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Send the Download Link"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@77be656f]" name="runScenario" duration-ms="33380" started-at="2021-08-13T15:33:35 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-13T15:34:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User wants to download the app in ios devices"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Download the Quikr app in ios devices"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@77be656f]" name="runScenario" duration-ms="48025" started-at="2021-08-13T15:34:09 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-13T15:34:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User wants to download the app in android devices"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Download the Quikr app in ios devices"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@77be656f]" name="runScenario" duration-ms="73910" started-at="2021-08-13T15:34:57 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-13T15:36:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User wants to download the app in windows"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Download the Quikr app in ios devices"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@77be656f]" name="runScenario" duration-ms="29708" started-at="2021-08-13T15:36:11 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-13T15:36:40 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["error message should display when user enters the wrong inputs in mobile field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Invalid inputs"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@77be656f]" name="runScenario" duration-ms="51710" started-at="2021-08-13T15:36:40 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-13T15:37:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["An Error message should display when user enters the wrong email-id in downloading app for android"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Invalid inputs"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner@77be656f]" name="runScenario" duration-ms="45202" started-at="2021-08-13T15:37:32 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-08-13T15:38:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["An Error message should display when user enters the wrong password in downloading app for windows"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Invalid inputs"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunner@77be656f]" name="tearDownClass" is-config="true" duration-ms="570" started-at="2021-08-13T15:38:18 IST" finished-at="2021-08-13T15:38:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
